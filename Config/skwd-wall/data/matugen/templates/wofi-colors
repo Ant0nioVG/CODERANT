@@ -1,0 +1,11 @@
+# ============================================================
+# Matugen template: Wofi colors
+# One hex color per line: text, subtext, border, background,
+# accent.
+# ============================================================
+
+{{colors.on_surface.default.hex}}
+{{colors.on_surface_variant.default.hex}}
+{{colors.outline_variant.default.hex}}
+{{colors.primary_container.default.hex}}
+{{colors.primary.default.hex}}

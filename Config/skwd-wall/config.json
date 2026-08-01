@@ -1,0 +1,130 @@
+{
+  "compositor": "hyprland",
+  "monitor": "",
+  "general": {
+    "locale": "",
+    "closeOnSelection": false,
+    "reopenAtLastSelection": false,
+    "uiScale": 1,
+    "wallpaperPerMonitor": false
+  },
+  "paths": {
+    "wallpaper": "~/Wallpapers",
+    "videoWallpaper": "~/videowalls",
+    "cache": "",
+    "templates": "",
+    "scripts": "",
+    "steam": "",
+    "steamWorkshop": "",
+    "steamWeAssets": ""
+  },
+  "features": {
+    "matugen": true,
+    "ollama": false,
+    "steam": false,
+    "wallhaven": true
+  },
+  "colorSource": "magick",
+  "ollama": {
+    "url": "http://localhost:11434",
+    "model": "gemma3:4b",
+    "consolidateEnabled": true
+  },
+  "steam": {
+    "apiKey": "",
+    "username": ""
+  },
+  "wallhaven": {
+    "apiKey": ""
+  },
+  "matugen": {
+    "schemeType": "scheme-content",
+    "mode": "dark",
+    "contrast": 0
+  },
+  "integrations": [
+    {
+      "name": "hyprland",
+      "template": "hyprland-colors.lua",
+      "output": "~/.config/hypr/splits/colors.lua"
+    },
+    {
+      "name": "swaync",
+      "template": "swaync-colors.css",
+      "output": "~/.config/swaync/colors.css",
+      "reload": "swaync-client --reload-css"
+    },
+    {
+      "name": "kitty",
+      "template": "kitty.conf",
+      "output": "~/.config/kitty/themes/matugen-theme.conf",
+      "reload": "pkill -USR1 kitty"
+    },
+    {
+      "name": "vesktop",
+      "template": "vesktop.css",
+      "output": "~/.config/vesktop/settings/quickCss.css"
+    },
+    {
+      "name": "yazi",
+      "template": "yazi-theme.toml",
+      "output": "~/.config/yazi/theme.toml"
+    },
+    {
+      "name": "quickshell",
+      "template": "quickshell-colors.json",
+      "output": "~/.config/quickshell/colors.json"
+    },
+    {
+      "name": "opencode",
+      "template": "opencode.json",
+      "output": "~/.config/opencode/themes/matugen.json",
+      "reload": "pkill -SIGUSR2 opencode"
+    },
+    {
+      "name": "wofi",
+      "template": "wofi-colors",
+      "output": "~/.config/wofi/colors"
+    },
+    {
+      "name": "hyprlock",
+      "template": "hyprlock-colors.conf",
+      "output": "~/.config/hypr/splits/colors-hyprlock.conf"
+    }
+  ],
+  "components": {
+    "wallpaperSelector": {
+      "displayMode": "wall",
+      "sliceSpacing": -30,
+      "hexScrollStep": 1,
+      "customPresets": {}
+    }
+  },
+  "wallpaperMute": true,
+  "pickOnlyMode": false,
+  "externalWallpaperCommand": "",
+  "postProcessing": [],
+  "performance": {
+    "imageOptimizePreset": "balanced",
+    "imageOptimizeResolution": "2k",
+    "videoConvertPreset": "balanced",
+    "videoConvertResolution": "2k",
+    "autoOptimizeImages": false,
+    "autoConvertVideos": false,
+    "imageTrashDays": 7,
+    "videoTrashDays": 7,
+    "autoDeleteImageTrash": false,
+    "autoDeleteVideoTrash": false
+  },
+  "paper": {
+    "engine": "awww",
+    "awww": {
+      "transitionType": "center",
+      "filter": "Lanczos3",
+      "transitionDurationMs": 2000
+    }
+  },
+  "display": {
+    "fillMode": "fill"
+  }
+}

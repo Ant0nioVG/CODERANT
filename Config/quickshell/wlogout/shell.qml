@@ -1,0 +1,53 @@
+// ============================================================
+// Wlogout shell — power menu with 6 actions
+// Each button has a keybind shortcut shown in parentheses.
+// ============================================================
+
+import QtQuick
+import Quickshell
+
+ShellRoot {
+  WLogout {
+    LogoutButton {
+      command: "loginctl lock-session"
+      keybind: Qt.Key_K
+      text: "Lock"
+      icon: "lock"
+    }
+
+    LogoutButton {
+      command: "uwsm stop"
+      keybind: Qt.Key_E
+      text: "Logout"
+      icon: "logout"
+    }
+
+    LogoutButton {
+      command: "systemctl suspend"
+      keybind: Qt.Key_U
+      text: "Suspend"
+      icon: "suspend"
+    }
+
+    LogoutButton {
+      command: "systemctl hibernate"
+      keybind: Qt.Key_H
+      text: "Hibernate"
+      icon: "hibernate"
+    }
+
+    LogoutButton {
+      command: "systemctl poweroff"
+      keybind: Qt.Key_S
+      text: "Shutdown"
+      icon: "shutdown"
+    }
+
+    LogoutButton {
+      command: "systemctl reboot"
+      keybind: Qt.Key_R
+      text: "Reboot"
+      icon: "reboot"
+    }
+  }
+}

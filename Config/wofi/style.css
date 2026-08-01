@@ -1,0 +1,42 @@
+* {
+  all: unset;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid --wofi-color10;
+  border-radius: 5px;
+}
+
+#input {
+  background-color: transparent;
+  color: --wofi-color7;
+  border: none;
+  font-size: 14px;
+  padding: 12px;
+  margin: 20px;
+}
+
+#scroll {
+  margin: 0px;
+  padding: 0px;
+  min-height: 300px;
+}
+
+#inner-box {
+  margin: 0px;
+  padding: 0px;
+}
+
+#entry {
+  background-color: transparent;
+  color: --wofi-color8;
+  font-size: 14px;
+  padding: 12px 15px;
+  margin: 4px 20px;
+}
+
+#entry:selected {
+  color: --wofi-color10;
+  font-weight: bold;
+}

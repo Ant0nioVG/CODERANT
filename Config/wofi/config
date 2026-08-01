@@ -1,0 +1,8 @@
+width=600
+height=420
+show=drun
+columns=1
+allow_images=false
+color=/home/your-user/.config/wofi/colors
+no_actions=true
+insensitive=true

@@ -1,0 +1,25 @@
+// ============================================================
+// Fastfetch system info configuration
+// Displays OS, kernel, packages, shell, memory and a color
+// palette row.
+// ============================================================
+
+{
+  "logo": null,
+  "display": {
+    "key": {
+      "width": 11
+    }
+  },
+  "modules": [
+    "os",
+    "kernel",
+    "packages",
+    "shell",
+    "memory",
+    "custom",                        
+    "colors"              
+  ],
+  "type": "custom",
+  "key": " "                    
+}

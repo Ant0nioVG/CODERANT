@@ -1,0 +1,189 @@
+/* ============================================================
+ * Swaync notification center styles
+ * Dynamic colors are imported from colors.css (generated).
+ * ============================================================ */
+
+@import "colors.css";
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+  font-size: 13px;
+  transition: all 200ms ease;
+}
+
+/* ============================================================
+ * Notification rows
+ * ============================================================ */
+
+.notification-row {
+  outline: none;
+  margin: 6px 6px 0 6px;
+}
+
+.notification-row:last-child {
+  margin-bottom: 6px;
+}
+
+.notification {
+  background: alpha(#000000, 0.7);
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 50px;
+}
+
+.notification-content {
+  padding: 4px;
+}
+
+.summary {
+  color: @notification_title_color;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.time {
+  color: #8b919c;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.body {
+  color: alpha(#e1e2e9, 0.9);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.app-icon {
+  min-width: 36px;
+  min-height: 36px;
+  margin-right: 10px;
+}
+
+.image {
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.notification-action {
+  background: alpha(#000000, 0.7);
+  border: 1px solid #000000;
+}
+
+.notification-action:hover {
+  background: alpha(#000000, 0.7);
+}
+
+.close-button {
+  background: transparent;
+  color: alpha(#e1e2e9, 0.3);
+  border-radius: 4px;
+  padding: 2px 6px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.close-button:hover {
+  background: alpha(#000000, 0.7);
+  color: #e1e2e9;
+}
+
+/* Critical notification overrides */
+.notification.critical {
+  background: alpha(#000000, 0.7);
+  border-color: #000000;
+}
+
+.notification.critical .summary {
+  color: @notification_title_color;
+}
+
+.notification.low {
+  background: alpha(#000000, 0.7);
+}
+
+/* ============================================================
+ * Control center
+ * ============================================================ */
+
+.control-center {
+  background: alpha(#000000, 0.7);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.widget-title > label {
+  color: #e1e2e9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.widget-title > button {
+  background: transparent;
+  color: #8b919c;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 11px;
+}
+
+.widget-title > button:hover {
+  background: alpha(#000000, 0.7);
+  color: alpha(#e1e2e9, 0.7);
+}
+
+/* Do Not Disturb toggle */
+.widget-dnd {
+  margin: 6px 0;
+}
+
+.widget-dnd > label {
+  color: alpha(#e1e2e9, 0.45);
+  font-size: 12px;
+}
+
+.widget-dnd > switch {
+  background: alpha(#000000, 0.7);
+  border: 1px solid #000000;
+  border-radius: 12px;
+  min-width: 40px;
+  min-height: 20px;
+}
+
+.widget-dnd > switch:checked {
+  background: alpha(#000000, 0.7);
+}
+
+.widget-dnd > switch slider {
+  background: #000000;
+  border-radius: 10px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.widget-dnd > switch:checked slider {
+  background: #000000;
+}
+
+/* Notifications inside control center */
+.control-center .notification {
+  background: alpha(#000000, 0.7);
+  border-color: #000000;
+  margin-bottom: 4px;
+}
+
+.control-center .notification:hover {
+  background: alpha(#000000, 0.7);
+  border-color: #000000;
+}
+
+.blank-window {
+  background: transparent;
+}
+
+.control-center-list-placeholder > label {
+  color: alpha(#e1e2e9, 0.2);
+  font-size: 12px;
+}

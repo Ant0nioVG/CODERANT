@@ -1,0 +1,6 @@
+/* ============================================================
+ * Matugen template: Swaync notification title color
+ * Imported by style.css via: @import "colors.css";
+ * ============================================================ */
+
+@define-color notification_title_color {{colors.primary.default.hex}};
