@@ -39,7 +39,7 @@ return {
             },
             {
               action = function()
-                require("yazi").yazi("~/.config/nvim")
+                require("yazi").yazi(nil, "~/.config/nvim")
               end,
               desc = "Config",
               icon = " ",
