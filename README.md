@@ -14,9 +14,7 @@ A modern, fast, and visually cohesive dotfiles collection for **CachyOS** powere
 
 - **Dynamic Material You Theming** — Colors extracted from your wallpaper via `matugen` propagate to every component: Hyprland, Kitty, Swaync, Wofi, Yazi, Neovim, Quickshell, Vesktop (Discord), and OpenCode.
 - **Quickshell Panel** — A polished, reactive taskbar and OSD built with QML, featuring workspaces, volume, brightness, network, battery, notifications, clock, and power menu.
-- **Modular Lua Config** — Hyprland configuration split into focused modules (`splits/`) for maintainability.
 - **LazyVim Neovim** — Fully featured Neovim setup with 50+ plugins, custom dashboard, and multiple colorschemes.
-- **Keyboard-Driven** — Extensive keybindings for window management, media controls, screenshots, and app launching.
 - **Wayland Native** — All applications configured to run natively on Wayland for optimal performance.
 
 ## Gallery
