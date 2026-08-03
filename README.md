@@ -123,4 +123,6 @@ The Kitty template (`Config/skwd-wall/data/matugen/templates/kitty.conf`) is bas
 
 The icons in `Config/quickshell/` (Quickshell panel and wlogout power menu) are from [Phosphor Icons](https://phosphoricons.com) (MIT License). See [LICENSE-ICONS](Config/quickshell/icons/LICENSE-ICONS) and [LICENSE-ICONS](Config/quickshell/wlogout/icons/LICENSE-ICONS).
 
+The power menu in `Config/quickshell/wlogout/` is based on the official examples from [quickshell-examples](https://git.outfoxxed.me/quickshell/quickshell-examples), modified with dynamic Material You color support and a custom UI.
+
 The Neovim configuration in `Config/nvim/` overrides the [LazyVim](https://github.com/LazyVim/LazyVim) framework (Apache License 2.0), which is installed externally. See [Install.md](Install.md).
